@@ -3,9 +3,9 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: GitRepository
 metadata:
   name: nginx-mine
-  namespace: nginx-mine
+  namespace: flux-system
 spec:
   interval: 5m0s
   url: https://github.com/pasitconsulting/nginx-mine
   ref:
-    branch: master
+    branch: main
