@@ -1,0 +1,18 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: nginx-mine
+  namespace: nginx-mine
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: ../charts
+      version: '>1.0.x'
+      sourceRef:
+        kind: GitRepository
+        name: nginx-mine
+        namespace: nginx-mine
+      interval: 1m
+  values:
+    replicaCount: 1
