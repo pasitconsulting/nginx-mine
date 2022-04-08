@@ -1,1 +1,1 @@
-# nginx-mine
+# k8s config
