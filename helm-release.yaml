@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: helm-nginx
-      version: '>1.0.x'
+      version: '>0.0.x'
       sourceRef:
         kind: GitRepository
         name: nginx-mine
